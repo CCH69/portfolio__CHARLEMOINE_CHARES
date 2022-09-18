@@ -1,0 +1,51 @@
+<mjml>
+
+  <mj-body>
+
+
+
+
+
+    <mj-section background-color="#ef6451">
+      <mj-column >
+        <mj-navbar align="right" padding-right="10px" base-url="https://mjml.io" hamburger="hamburger" ico-color="#ffffff">
+          <mj-navbar-link href="/gettings-started-onboard" color="#ffffff">Contact</mj-navbar-link>
+          <mj-navbar-link href="/try-it-live" color="#ffffff">qui suis-je</mj-navbar-link>
+          <mj-navbar-link href="/templates" color="#ffffff">Portfolio</mj-navbar-link>
+        </mj-navbar>
+      </mj-column>
+    </mj-section>
+    <mj-hero mode="fluid-height" background-width="600px" background-height="469px" background-url="https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg" background-color="#2a3448" padding="100px 0px">
+      <mj-text padding="20px" color="#ffffff" font-family="Helvetica" align="center" font-size="45px" line-height="45px" font-weight="900">
+        CONCEPTEUR DESIGNER UI
+      </mj-text>
+      <mj-button href="https://mjml.io/" align="center">
+        ME CONTACTER
+      </mj-button>
+    </mj-hero>
+
+
+
+
+
+
+
+
+    <mj-section>
+      <mj-column>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal">
+          <mj-social-element name="facebook" href="https://mjml.io/">
+            Facebook
+          </mj-social-element>
+          <mj-social-element name="google" href="https://mjml.io/">
+            Google
+          </mj-social-element>
+          <mj-social-element  name="twitter" href="https://mjml.io/">
+            Twitter
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
