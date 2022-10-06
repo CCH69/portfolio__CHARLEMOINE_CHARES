@@ -1,8 +1,11 @@
-let parent = document.querySelectorAll(".animate-text");
-for (let i = 0; i < parent.length; i++) {
-	parent[i].style.width = parent[i].children[0].clientWidth + "px";
-}
-
+document.addEventListener("DOMContentLoaded", function () {
+	let parent = document.querySelectorAll(".animate-text");
+	for (let i = 0; i < parent.length; i++) {
+		parent[i].style.width = parent[i].children[0].clientWidth + "px";
+	}
+	scrollToTop();
+});
+var lastScrollTop = 0;
 // Cursor
 
 var cursor = document.querySelector(".cursor");
@@ -41,48 +44,6 @@ a.forEach((item) => {
 	});
 });
 
-// Cursor
-
-// var lastScrollTop = 0;
-// let titleTop = document.querySelector(".animate-text.top");
-// let titleLeft = document.querySelector(".animate-text.left");
-
-// window.addEventListener("scroll", function () {
-// 	var st = window.pageYOffset || document.documentElement.scrollTop;
-
-// 	if (st >= 80) {
-// 		if (titleTop.classList.contains("js-animated-text-down")) {
-// 			titleTop.classList.remove("js-animated-text-down");
-// 		}
-// 		if (titleTop.classList.contains("stop__animation")) {
-// 			titleTop.classList.remove("stop__animation");
-// 		}
-
-// 		titleTop.classList.add("js-animated-text-up");
-
-// 		// texte d en bas
-// 		if (titleLeft.classList.contains("js-animated-text-left-up")) {
-// 			titleLeft.classList.remove("js-animated-text-left-up");
-// 		}
-// 		if (titleLeft.classList.contains("stop__animation__reverse")) {
-// 			titleLeft.classList.remove("stop__animation__reverse");
-// 		}
-// 		titleLeft.classList.add("js-animated-text-left-down");
-// 	}
-
-// 	if (st <= 80 && st > 0) {
-// 		titleTop.classList.remove("js-animated-text-up");
-// 		titleTop.classList.add("js-animated-text-down");
-
-// 		// texte d en bas
-// 		titleLeft.classList.remove("js-animated-text-left-down");
-// 		titleLeft.classList.add("js-animated-text-left-up");
-
-// 		// $(titleTop).css("left", $(titleTop).position().left);
-// 	}
-
-// 	if (st === 0 || st === 20) {
-// 		titleTop.classList.add("stop__animation");
-// 		titleLeft.classList.add("stop__animation__reverse");
-// 	}
-// });
+function scrollToTop() {
+	window.scroll({top: 0, left: 0, behavior: "smooth"});
+}
