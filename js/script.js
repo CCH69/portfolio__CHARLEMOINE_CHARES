@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	for (let i = 0; i < parent.length; i++) {
 		parent[i].style.width = parent[i].children[0].clientWidth + "px";
 	}
-	scrollToTop();
+	// scrollToTop();
 });
 var lastScrollTop = 0;
 // Cursor
@@ -43,7 +43,3 @@ a.forEach((item) => {
 		cursor.classList.remove("hover");
 	});
 });
-
-function scrollToTop() {
-	window.scroll({top: 0, left: 0, behavior: "smooth"});
-}
