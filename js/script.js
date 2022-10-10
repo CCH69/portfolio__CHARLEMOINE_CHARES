@@ -36,12 +36,16 @@ if (window.innerWidth > 480) {
 		cursorinner.classList.remove("cursorinnerhover");
 	});
 
-	a.forEach((item) => {
-		item.addEventListener("mouseover", () => {
-			cursor.classList.add("hover");
-		});
-		item.addEventListener("mouseleave", () => {
-			cursor.classList.remove("hover");
-		});
-	});
+	// a.forEach((item) => {
+	// 	item.addEventListener("mouseover", () => {
+	// 		cursor.classList.add("hover");
+	// 	});
+	// 	item.addEventListener("mouseleave", () => {
+	// 		cursor.classList.remove("hover");
+	// 	});
+	// });
 }
+
+$("#send__email").on("click", function (e) {
+	window.open("mailto:test@example.com?subject=subject&body=body");
+});
