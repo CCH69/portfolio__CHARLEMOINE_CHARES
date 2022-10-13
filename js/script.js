@@ -46,6 +46,13 @@ if (window.innerWidth > 480) {
 	});
 }
 
-$("#send__email").on("click", function (e) {
-	window.open("mailto:charlemoine.c@gmail.com");
+$(".portfolio-caption").on("click", function (e) {
+	e.preventDefault();
+
+	let urlID = $(this)
+		.closest(".portfolio-item")
+		.find(".portfolio-link")
+		.attr("href");
+
+	$(urlID).modal("show");
 });

@@ -16,7 +16,11 @@ body {
   .cursor,
   .cursor2,
   .cursorinnerhover {
-    display: none; } }
+    display: none; }
+  h2 {
+    font-size: 2rem !important; }
+  .portfolio-modal .modal-content p {
+    font-size: 1.1rem !important; } }
 
 .cursor {
   width: 55px;
@@ -213,7 +217,7 @@ p {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .portfolio-modal .modal-content p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   color: black; }
